@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Subash M</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Education Section -->
+    <section class="py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-4">Education</h1>
+                <p class="lead text-muted">Academic qualifications and achievements</p>
+            </div>
+
+            <!-- Academic Timeline -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Current Education -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-graduation-cap fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Bachelor of Engineering (Information Technology)</h5>
+                                    <small>2025 Passed out Student</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h6 class="fw-semibold text-primary">Annamalai University, Chidambaram</h6>
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-calendar3 me-2"></i><strong>Duration:</strong> 2021 - 2025
+                                    </p>
+                                    <p class="text-muted mb-3">
+                                        <i class="bi bi-award me-2"></i><strong>Current CGPA:</strong> 7.89/10
+                                    </p>
+                                    
+                                    <div class="mb-3">
+                                        <h6 class="fw-semibold">Key Subjects Studied:</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Data Structures & Algorithms</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Database Management Systems</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Software Engineering</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Web Technologies</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Computer Networks</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Operating Systems</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Object-Oriented Programming</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>System Analysis & Design</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <h6 class="fw-semibold">Academic Highlights:</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-1"><i class="bi bi-star-fill text-warning me-2"></i>Consistent academic performance with 7.89 CGPA</li>
+                                            <li class="mb-1"><i class="bi bi-star-fill text-warning me-2"></i>Strong foundation in computer science fundamentals</li>
+                                            <li class="mb-1"><i class="bi bi-star-fill text-warning me-2"></i>Specialized focus on software development</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="bg-light rounded p-3 mb-3">
+                                        <h2 class="text-primary fw-bold mb-2">7.89</h2>
+                                        <p class="text-muted small mb-0">Current CGPA<br>Out of 10</p>
+                                    </div>
+                                    <span class="badge bg-success fs-6 p-2">Fresher </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary Education -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-success text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-school fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Higher Secondary Education (Math-Biology)</h5>
+                                    <small>Class XII - State Board</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h6 class="fw-semibold text-success">MGM Matric Higher Secondary School</h6>
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-calendar3 me-2"></i><strong>Year:</strong> 2020 - 2021
+                                    </p>
+                                    <p class="text-muted mb-3">
+                                        <i class="bi bi-award me-2"></i><strong>Percentage:</strong> 86.6%
+                                    </p>
+                                    
+                                    <div class="mb-3">
+                                        <h6 class="fw-semibold">Subjects:</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Mathematics</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Physics</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Chemistry</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Biology</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>English</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Tamil</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-muted small">
+                                        <i class="bi bi-lightbulb text-warning me-2"></i>
+                                        This Math-Biology combination provided a strong analytical foundation that now helps 
+                                        in programming and logical problem-solving approaches.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="bg-light rounded p-3 mb-3">
+                                        <h2 class="text-success fw-bold mb-2">86.6%</h2>
+                                        <p class="text-muted small mb-0">HSC Percentage</p>
+                                    </div>
+                                    <span class="badge bg-info fs-6 p-2">Math-Biology Stream</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Education -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-info text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-book fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Secondary School Leaving Certificate (SSLC)</h5>
+                                    <small>Class X - State Board</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h6 class="fw-semibold text-info">MGM Matric Higher Secondary School</h6>
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-calendar3 me-2"></i><strong>Year:</strong> 2018 - 2019
+                                    </p>
+                                    <p class="text-muted mb-3">
+                                        <i class="bi bi-award me-2"></i><strong>Percentage:</strong> 89.5%
+                                    </p>
+                                    
+                                    <div class="mb-3">
+                                        <h6 class="fw-semibold">Core Subjects:</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Mathematics</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Science</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Social Science</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>English</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Tamil</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-muted small">
+                                        <i class="bi bi-trophy text-warning me-2"></i>
+                                        Achieved excellent academic performance with strong foundation in mathematics and science, 
+                                        setting the groundwork for engineering studies.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="bg-light rounded p-3 mb-3">
+                                        <h2 class="text-info fw-bold mb-2">89.5%</h2>
+                                        <p class="text-muted small mb-0">SSLC Percentage</p>
+                                    </div>
+                                    <span class="badge bg-success fs-6 p-2">Excellent Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications & Additional Learning -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-certificate fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Certifications & Workshops</h5>
+                                    <small>Additional Learning & Skill Development</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="badge bg-primary p-2 rounded-circle me-3">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold">Web Designing Certificate</h6>
+                                            <p class="text-muted small mb-1">Annamalai University</p>
+                                            <p class="text-muted small">
+                                                Comprehensive course covering HTML, CSS, JavaScript, and responsive design principles.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="badge bg-success p-2 rounded-circle me-3">
+                                            <i class="fas fa-server"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold">Data Center Infrastructure</h6>
+                                            <p class="text-muted small mb-1">Scale Computing</p>
+                                            <p class="text-muted small">
+                                                Training on modern data center technologies, virtualization, and infrastructure management.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="badge bg-success p-2 rounded-circle me-3">
+                                            <i class="fas fa-server"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-semibold">StudytoNight Website</h6>
+                                            <p class="text-muted small mb-1">CSS</p>
+                                            <p class="text-muted small">
+                                                Learned basics of CSS and implementation of CSS in real time projects through practical experience.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Performance Summary -->
+                    <div class="card border-0 bg-gradient text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="card-body p-4">
+                            <h4 class="text-center mb-4">
+                                <i class="fas fa-chart-line me-2"></i>Academic Performance Overview
+                            </h4>
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-3">
+                                    <div class="bg-rgba-white rounded p-3" style="background-color: rgba(255,255,255,0.1);">
+                                        <h2 class="fw-bold mb-2">89.5%</h2>
+                                        <h6>SSLC (2019)</h6>
+                                        <p class="small mb-0">Class X Board Examination</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="bg-rgba-white rounded p-3" style="background-color: rgba(255,255,255,0.1);">
+                                        <h2 class="fw-bold mb-2">86.6%</h2>
+                                        <h6>HSC (2021)</h6>
+                                        <p class="small mb-0">Higher Secondary Certificate</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="bg-rgba-white rounded p-3" style="background-color: rgba(255,255,255,0.1);">
+                                        <h2 class="fw-bold mb-2">7.89</h2>
+                                        <h6>B.E IT (Current)</h6>
+                                        <p class="small mb-0">Current CGPA out of 10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="lead mb-0">
+                                    <i class="bi bi-graph-up me-2"></i>
+                                    Consistent academic excellence with strong foundation in mathematics, science, and technology
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center mt-5">
+                        <a href="/skills" class="btn btn-primary btn-lg me-3">
+                            <i class="bi bi-gear-fill me-2"></i>View My Skills
+                        </a>
+                        <a href="/experience" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-briefcase-fill me-2"></i>Work Experience
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Subash M. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-end">
+                        <a href="https://github.com/Subash0512" class="text-white me-3" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/subash-m-6802a4311" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:subashmadhavan05@gmail.com" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
