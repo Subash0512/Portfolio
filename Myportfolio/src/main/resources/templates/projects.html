@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Subash M</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Subash M</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-4">My Projects</h1>
+                <p class="lead text-muted">Showcase of my development work and achievements</p>
+            </div>
+
+            <div class="row">
+                <!-- Project 1: PRISM Security System -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-danger text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-shield-alt fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">PRISM | Spider - Security System</h5>
+                                    <small>Jan 2025 – May 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text">
+                                Multi-layer security application developed in an agile environment with a team of 3 members. 
+                                Built a comprehensive malware detection tool for Linux systems using Python and advanced security algorithms.
+                            </p>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Key Features:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Malware detection for Linux systems</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Third-party security APIs integration (ClamAV, YARA)</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>SHA-256 hashing algorithm for intelligent caching</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Automated PDF report generation</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Quarantine management functionality</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Technologies Used:</h6>
+                                <span class="badge bg-primary me-2">Python</span>
+                                <span class="badge bg-success me-2">Tkinter</span>
+                                <span class="badge bg-danger me-2">ClamAV</span>
+                                <span class="badge bg-warning me-2">YARA</span>
+                                <span class="badge bg-info me-2">Linux</span>
+                                <span class="badge bg-secondary me-2">PDF Gen</span>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">My Role:</h6>
+                                <p class="text-muted small mb-0">
+                                    <strong>Team Lead & Core Developer</strong> - Led project planning, architecture design, 
+                                    and implementation of core malware detection algorithms. Managed team coordination and code reviews.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('prism')">
+                                    <i class="bi bi-info-circle me-2"></i>View Details
+                                </button>
+                                <div>
+                                    <span class="badge bg-success">Completed</span>
+                                    <span class="badge bg-primary">Team Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Hospital Management System -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-success text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-hospital fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Hospital Management System</h5>
+                                    <small>July 2025 – present</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text">
+                                Comprehensive hospital management system built with Spring Boot and MySQL. 
+                                Features patient registration, doctor management, appointment scheduling, and medical records management.
+                            </p>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Key Features:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Patient registration and profile management</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Doctor profile and schedule management</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Appointment booking and tracking system</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Medical records and history tracking</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>RESTful API endpoints for all operations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Technologies Used:</h6>
+                                <span class="badge bg-primary me-2">Java</span>
+                                <span class="badge bg-success me-2">Spring Boot</span>
+                                <span class="badge bg-info me-2">MySQL</span>
+                                <span class="badge bg-warning me-2">Thymeleaf</span>
+                                <span class="badge bg-secondary me-2">Bootstrap</span>
+                                <span class="badge bg-dark me-2">Maven</span>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">My Role:</h6>
+                                <p class="text-muted small mb-0">
+                                    <strong>Full Stack Developer</strong> - Designed database schema, developed backend APIs, 
+                                    created frontend interfaces, and implemented form validation with error handling.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-outline-success btn-sm" onclick="showProjectDetails('hospital-management')">
+                                    <i class="bi bi-info-circle me-2"></i>View Details
+                                </button>
+                                <div>
+                                    <span class="badge bg-success">Completed</span>
+                                    <span class="badge bg-info">Solo Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Portfolio Website -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-primary text-white">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-globe fa-2x me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Personal Portfolio Website</h5>
+                                    <small>July 2025 – Sept 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text">
+                                Professional portfolio website showcasing skills, projects, and experience. 
+                                Built with Spring Boot backend and modern responsive frontend design with interactive features.
+                            </p>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Key Features:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Responsive design for all devices</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive contact form with validation</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Skills showcase with progress bars</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Project gallery with detailed descriptions</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Professional layout and modern UI/UX</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Technologies Used:</h6>
+                                <span class="badge bg-primary me-2">Java</span>
+                                <span class="badge bg-success me-2">Spring Boot</span>
+                                <span class="badge bg-warning me-2">Thymeleaf</span>
+                                <span class="badge bg-info me-2">Bootstrap 5</span>
+                                <span class="badge bg-secondary me-2">JavaScript</span>
+                                <span class="badge bg-dark me-2">CSS3</span>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">My Role:</h6>
+                                <p class="text-muted small mb-0">
+                                    <strong>Full Stack Developer & Designer</strong> - Complete development from design to deployment, 
+                                    including responsive frontend, Spring Boot backend, and form handling.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-outline-primary btn-sm" onclick="showProjectDetails('Personal Portfolio Website')">
+                                    <i class="bi bi-info-circle me-2"></i>View Details
+                                </button>
+                                <div>
+                                    <span class="badge bg-success">Completed</span>
+                                    <span class="badge bg-primary">Solo Project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTitle">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="projectModalBody">
+                    <!-- Project details will be loaded here via JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Subash M. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-end">
+                        <a href="https://github.com/Subash0512" class="text-white me-3" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/subash-m-6802a4311" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:subashmadhavan05@gmail.com" class="text-white">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
