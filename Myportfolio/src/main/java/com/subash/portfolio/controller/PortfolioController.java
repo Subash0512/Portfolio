@@ -67,11 +67,21 @@ public class PortfolioController {
         }
 
         // send the email
-        emailService.sendContactMail(contactForm);
+        try {
+    emailService.sendContactMail(contactForm);
 
-        redirectAttributes.addFlashAttribute("successMessage",
-                "Thank you for your message! I'll get back to you soon.");
-        return "redirect:/contact";
+    redirectAttributes.addFlashAttribute(
+        "successMessage",
+        "Message sent successfully.");
+
+} catch (Exception e) {
+
+    redirectAttributes.addFlashAttribute(
+        "errorMessage",
+        "Unable to send message. Please try again later.");
+}
+
+return "redirect:/contact";
     }
 
 }
