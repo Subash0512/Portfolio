@@ -1,5 +1,5 @@
 package com.subash.portfolio.service;
-
+import com.subash.portfolio.service.EmailService;
 import com.subash.portfolio.model.ContactForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
