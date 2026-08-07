@@ -496,26 +496,48 @@ a:hover {
   color: var(--color-text);
 }
 
+
+
+
+
 .form-control {
-  background-color: #020617;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(148, 163, 184, 0.45);
-  color: var(--color-text);
-  font-size: var(--fs-sm);
-  padding: 0.75rem 0.9rem;
-  transition: border-color var(--transition-normal),
-              box-shadow var(--transition-normal),
-              background-color var(--transition-fast);
+
+    background-color: #111827 !important;
+
+    color: #ffffff !important;
+
+    border: 1px solid #4b5563;
+
 }
+
+
 
 .form-control:focus {
-  background-color: #020617;
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.9);
+
+    background-color: #111827 !important;
+
+    color: #ffffff !important;
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+
 }
 
+
+
 .form-control::placeholder {
-  color: var(--color-text-soft);
+
+    color: #9ca3af !important;
+
+}
+
+
+
+textarea.form-control {
+
+    color: #ffffff !important;
+
 }
 
 /* ================================
